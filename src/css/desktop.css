@@ -1,0 +1,125 @@
+@media screen and (min-width: 768px) {
+  /* ====
+   NAVBAR
+   ====
+  */
+
+  header {
+    height: 70vh;
+    background-position: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  nav .mobile {
+    display: none;
+  }
+
+  /* Desktop menu */
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 1em 1.12em;
+    position: relative;
+  }
+
+  nav ul li > a:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: center;
+    background-color: var(--black);
+    transition: all 200ms ease-in;
+  }
+
+  nav ul li a:hover:after {
+    transform: scaleX(1);
+  }
+
+  nav ul .logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 160px;
+  }
+
+  nav ul .logo::after {
+    display: none;
+  }
+
+  nav ul .logo img {
+    width: 100%;
+  }
+
+  /* mini-menu */
+  nav ul:nth-child(2) .menu {
+    display: none;
+    background-color: var(--white);
+  }
+
+  nav ul:nth-child(2) li.more {
+    position: relative;
+  }
+
+  nav ul:nth-child(2) .menu.active {
+    position: absolute;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul:nth-child(2) .menu.active a:hover {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+}
+
+
+@media screen and (min-width: 1090px) {
+  /* ====
+   NAVBAR
+   ====
+  */
+
+  header {
+    height: 100vh;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 2.2em;
+  }
+
+  /* mini-menu to be part of the principal menu */
+  nav ul:nth-child(2) li.more {
+    position: initial;
+  }
+
+  nav ul:nth-child(2) li.more > a {
+    display: none;
+  }
+
+  nav ul:nth-child(2) .menu {
+    position: initial;
+    width: auto;
+    display: flex;
+    background-color: initial;
+  }
+}

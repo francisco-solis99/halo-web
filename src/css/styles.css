@@ -16,7 +16,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: black;
+}
+
+.app {
+  min-width: 320px;
 }
 
 /* ====
@@ -24,4 +27,88 @@ body {
    ====
 */
 
+header {
+  --nav-size: 40px;
+  width: 100%;
+  background-image: url('../images/halo-infinite-cover.jpeg');
+  background-position: center var(--nav-size);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
 
+nav {
+  width: 100%;
+  min-height: var(--nav-size);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white);
+}
+
+nav ul {
+  display: none;
+}
+
+.mobile {
+  width: 100%;
+}
+
+.mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.mobile .header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile .header .logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  padding: 0.8em 0;
+  max-width: 150px;
+}
+
+.mobile .header .logo img {
+  width: 100%;
+}
+
+.mobile .header div a {
+  display: inline-flex;
+  padding: 0 .7em;
+}
+
+.mobile .links {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: var(--white);
+}
+
+.mobile .links.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile .links a {
+  font-size: 1.1rem;
+  padding: 0.7em 1.3em;
+}
+
+.mobile .links a:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
