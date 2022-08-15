@@ -117,6 +117,37 @@
    ====
   */
 
+  .multiplayer {
+    background-position: center left;
+  }
+
+
+  /* ====
+   Get the Game section
+   ====
+  */
+  .game__content {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .game__info {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3em;
+  }
+
+  .game__details {
+    align-self: flex-start;
+    text-align: initial;
+  }
+
+  .game__button {
+    margin: 0;
+  }
+
+
+
 }
 
 
@@ -163,8 +194,8 @@
     display: grid;
     place-content: center;
     position: absolute;
-    top: 11%;
-    right: 7%;
+    top: 200px;
+    right: 100px;
   }
 
   .hero__title {
@@ -182,6 +213,14 @@
 
   .multiplayer__info {
     margin-right: 3em;
+  }
+
+  .game__info figure {
+    max-width: 500px;
+  }
+
+  .game__details {
+    max-width: 600px;
   }
 
 }

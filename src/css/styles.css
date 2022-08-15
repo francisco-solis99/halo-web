@@ -267,8 +267,9 @@ nav ul {
   display: grid;
   place-content: center;
   height: 100vh;
-  background-image: url('../images/halo-infinite-cover.jpeg');
+  background-image: url('../images/bg-multiplayer.jpeg');
   background-size: cover;
+  background-position: -200px 0;
 }
 
 .multiplayer__info {
@@ -291,5 +292,58 @@ nav ul {
   width: calc(var(--width-form) + 40px);
   left: calc(50% - ((var(--width-form) + 40px) / 2));
 }
+
+/* ====
+   Get the Game section
+   ====
+*/
+
+.game__title {
+  text-align: center;
+}
+
+.game__info {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game__info figure {
+  margin: 0;
+  max-width: 300px;
+}
+
+.game__info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game__details {
+  width: 90%;
+  text-align: center;
+}
+
+.game__details h4 {
+  margin: 0.4em 0 0.8em;
+  font-size: 1.8rem;
+}
+
+.game__details p {
+  line-height: 1.4rem;
+}
+
+.game__details select {
+  margin-bottom: 1.5em;
+}
+
+.game__button {
+  padding: 1em 3em;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+
+
 
 
