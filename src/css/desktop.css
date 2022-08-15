@@ -1,3 +1,26 @@
+@media screen and (max-width: 420px) {
+  /* ====
+   Multiplayer section
+   ====
+  */
+  .multiplayer {
+    align-content: initial;
+  }
+
+  .multiplayer__info {
+    height: 100%;
+    margin: 0;
+    display: grid;
+    place-content: center;
+  }
+
+  .multiplayer__title {
+    font-size: 2.4rem;
+    word-break: break-all;
+  }
+
+}
+
 @media screen and (min-width: 768px) {
   /* ====
    NAVBAR
@@ -89,6 +112,11 @@
     color: var(--white);
   }
 
+  /* ====
+   Multiplayer section
+   ====
+  */
+
 }
 
 
@@ -135,11 +163,27 @@
     display: grid;
     place-content: center;
     position: absolute;
-    top: 18%;
+    top: 11%;
     right: 7%;
   }
 
   .hero__title {
     margin: 0;
   }
+
+  /* ====
+   Multiplayer section
+   ====
+  */
+
+  .multiplayer {
+    justify-content: end;
+  }
+
+  .multiplayer__info {
+    margin-right: 3em;
+  }
+
 }
+
+

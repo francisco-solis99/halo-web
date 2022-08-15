@@ -9,7 +9,7 @@
   --black: #000;
   --dark-grey: #3a3a3a;
   --dark-light: #FFFFFF66;
-  --light-white: #FFFFFFCC;
+  --light-white: #fffc;
 }
 
 body {
@@ -256,3 +256,40 @@ nav ul {
 .videos__list {
   display: none;
 }
+
+
+/* ====
+   Multiplayer section
+   ====
+*/
+
+.multiplayer {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-image: url('../images/halo-infinite-cover.jpeg');
+  background-size: cover;
+}
+
+.multiplayer__info {
+  max-width: 600px;
+  margin: 0 1em;
+  padding: 2.5em 1.8em;
+  background-color: var(--light-white);
+}
+
+.multiplayer__title {
+  margin-top: 0;
+}
+
+.multiplayer__info p {
+  margin-top: 3.3em;
+  font-size: 1.2rem;
+}
+
+.multiplayer__title::after {
+  width: calc(var(--width-form) + 40px);
+  left: calc(50% - ((var(--width-form) + 40px) / 2));
+}
+
+
