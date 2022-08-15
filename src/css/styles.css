@@ -112,3 +112,136 @@ nav ul {
   background-color: var(--black);
   color: var(--white);
 }
+
+/* ====
+   Banner Hero
+   ====
+*/
+
+.hero {
+  margin: 0.7em 0;
+}
+
+.hero__content {
+  text-align: center;
+  padding: 0 1em;
+}
+
+.title {
+  margin: 1em 0;
+  font-size: 3.4rem;
+  position: relative;
+}
+
+.title::after {
+  --width-form: 120px;
+  content: "";
+  position: absolute;
+  left: calc(50% - var(--width-form) / 2);
+  bottom: -35px;
+  display: block;
+  width: var(--width-form);
+  height: 20px;
+  clip-path: polygon(5% 0, 100% 0, 94% 100%, 0% 100%);
+  background-color: var(--primary-color);
+}
+
+.primary__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8em 1.2em;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  color: var(--black);
+  cursor: pointer;
+}
+
+.hero__btn {
+  width: 30%;
+  max-width: 200px;
+  min-width: 160px;
+  margin: 6em auto 3.2em;
+}
+
+.hero__content p {
+  font-size: 1.6rem;
+  margin-bottom: 1.4em;
+}
+
+.secundary__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+
+/* ====
+   Videos section
+   ====
+*/
+
+.videos {
+  margin-top: 4.8em;
+  background-image: url('../images/bg-videos.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.videos__info {
+  width: 80%;
+  margin: 0 auto 3em;
+}
+
+.videos__title::after {
+  width: calc(var(--width-form) - 30px);
+  left: calc(50% - ((var(--width-form) - 30px) / 2));
+}
+
+.videos__text {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.videos__controls h4 {
+  font-size: 1.4rem;
+}
+
+.videos__controls .controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  max-width: 160px;
+  margin: 0 auto;
+  color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+.videos__controls .controls .left__control {
+  transform: rotate(180deg);
+}
+
+.videos__controls .controls > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos__controls .controls span {
+  padding: 0.1em 0.4em;
+  font-size: 2.4rem;
+}
