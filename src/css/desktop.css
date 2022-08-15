@@ -122,4 +122,24 @@
     display: flex;
     background-color: initial;
   }
+
+  /* ====
+   Banner Hero
+   ====
+  */
+
+  .hero {
+    max-width: 500px;
+    margin: 0;
+    padding: 2.5em;
+    display: grid;
+    place-content: center;
+    position: absolute;
+    top: 18%;
+    right: 7%;
+  }
+
+  .hero__title {
+    margin: 0;
+  }
 }

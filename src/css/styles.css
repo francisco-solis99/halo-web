@@ -19,6 +19,8 @@ body {
 }
 
 .app {
+  position: relative;
+  max-width: 2880px;
   min-width: 320px;
 }
 
@@ -120,6 +122,7 @@ nav ul {
 
 .hero {
   margin: 0.7em 0;
+  background-color: var(--white);
 }
 
 .hero__content {
@@ -192,7 +195,7 @@ nav ul {
 */
 
 .videos {
-  margin-top: 4.8em;
+  padding-top: 1em;
   background-image: url('../images/bg-videos.png');
   background-position: center;
   background-size: cover;
@@ -202,7 +205,7 @@ nav ul {
 
 .videos__info {
   width: 80%;
-  margin: 0 auto 3em;
+  margin: 0 auto 4em;
 }
 
 .videos__title::after {
@@ -216,14 +219,14 @@ nav ul {
 }
 
 .videos__controls h4 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .videos__controls .controls {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 30%;
   max-width: 160px;
   margin: 0 auto;
   color: var(--white);
@@ -231,17 +234,25 @@ nav ul {
 }
 
 .videos__controls .controls .left__control {
+  border-right: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+.videos__controls .controls .left__control span {
   transform: rotate(180deg);
 }
 
 .videos__controls .controls > div {
   width: 100%;
+  padding: 0.3em 0.6em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .videos__controls .controls span {
-  padding: 0.1em 0.4em;
   font-size: 2.4rem;
+}
+
+.videos__list {
+  display: none;
 }
