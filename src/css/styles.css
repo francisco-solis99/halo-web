@@ -345,5 +345,17 @@ nav ul {
 }
 
 
+/* ====
+   Footer
+   ====
+*/
 
+footer {
+  margin-top: 5em;
+  height: 400px;
+  background-image: url('../images/master-chief.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
