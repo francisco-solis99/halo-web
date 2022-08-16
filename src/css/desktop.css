@@ -21,6 +21,9 @@
 
 }
 
+
+/* 720px Media Query */
+
 @media screen and (min-width: 768px) {
   /* ====
    NAVBAR
@@ -113,6 +116,34 @@
   }
 
   /* ====
+   Videos section
+   ====
+  */
+
+  .current {
+    max-width: 1080px;
+    height: 500px;
+  }
+
+  .videos__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    overflow: auto;
+    gap: 1em;
+  }
+
+  .video__item {
+    cursor: pointer;
+  }
+
+  .videos__list .video__thumbnail-wrapper {
+    margin: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+
+
+  /* ====
    Multiplayer section
    ====
   */
@@ -157,6 +188,7 @@
 
 }
 
+/* 1090px Media Query */
 
 @media screen and (min-width: 1090px) {
   /* ====
@@ -207,6 +239,22 @@
 
   .hero__title {
     margin: 0;
+  }
+
+  /* ====
+     Videos section
+    ====
+  */
+
+  .videos__list {
+    max-width: 1080px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .videos__list .video__thumbnail{
+    width: 100%;
+    object-fit: cover;
   }
 
   /* ====

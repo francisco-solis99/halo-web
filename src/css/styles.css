@@ -196,6 +196,7 @@ nav ul {
 
 .videos {
   padding-top: 1em;
+  padding-bottom: 3em;
   background-image: url('../images/bg-videos.png');
   background-position: center;
   background-size: cover;
@@ -228,13 +229,13 @@ nav ul {
   align-items: center;
   width: 30%;
   max-width: 160px;
-  margin: 0 auto;
+  margin: 0 auto 2.8em;
   color: var(--white);
   background-color: var(--dark-grey);
 }
 
 .videos__controls .controls .left__control {
-  border-right: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-right: 0.5px solid var(--dark-light);
 }
 
 .videos__controls .controls .left__control span {
@@ -247,14 +248,34 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all ease-in 250ms;
+}
+
+.videos__controls .controls > div:hover {
+  background-color: var(--dark-light);
 }
 
 .videos__controls .controls span {
   font-size: 2.4rem;
 }
 
+/* Styles for the videos generating with JS */
 .videos__list {
   display: none;
+}
+
+.current {
+  width: 80%;
+  min-width: 300px;
+  max-width: 500px;
+  height: 300px;
+  margin: 0 auto 4em;
+}
+
+.video__iframe {
+  width: 100%;
+  height: 100%;
 }
 
 
