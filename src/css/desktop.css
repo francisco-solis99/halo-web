@@ -123,7 +123,22 @@
   .current {
     max-width: 1080px;
     height: 500px;
+    animation: load 1s linear infinite alternate;
   }
+
+  .current iframe {
+    border: 0;
+  }
+
+  @keyframes load {
+    0%{
+      background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+      background-color: hsl(200, 20%, 95%);
+    }
+}
 
   .videos__list {
     display: grid;
@@ -134,12 +149,35 @@
 
   .video__item {
     cursor: pointer;
+    position: relative;
   }
 
   .videos__list .video__thumbnail-wrapper {
     margin: 0;
     width: 100%;
     pointer-events: none;
+  }
+
+  .video__item::after {
+    --size-reproducer-icon: 40px;
+    font-family: 'Material Icons';
+    content: 'play_arrow';
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size-reproducer-icon);
+    height: var(--size-reproducer-icon);
+    position: absolute;
+    top: calc(50% - var(--size-reproducer-icon) / 2);
+    left: calc(50% - var(--size-reproducer-icon) / 2);
+    border-radius: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .video__item:hover {
+    opacity: 0.7;
   }
 
 
@@ -277,9 +315,6 @@
   .game__details {
     max-width: 600px;
   }
-
-
-
 }
 
 
