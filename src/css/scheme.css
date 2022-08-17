@@ -1,0 +1,70 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--black);
+  }
+
+  header {
+    background-image: url('../images/halo-infinite-cover-darkmode.jpg');
+  }
+
+  header nav {
+    background-color: var(--black);
+  }
+
+  header nav ul li a{
+    color: var(--white);
+  }
+
+  .header span {
+    color: var(--white);
+  }
+
+  /* Banner Hero */
+
+  .hero {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  /* Videos section */
+  .videos {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  /* Multiplayer section */
+
+  .multiplayer {
+    background-color: var(--black);
+  }
+
+  .multiplayer__info {
+    background-color: var(--light-dark);
+    color: var(--white);
+  }
+
+  /* Get the game section */
+
+  .game {
+    background-color: var(--black);
+    color: var(--white);
+  }
+
+  /* Footer */
+  footer {
+    background-image: url('../images/master-chief-darkmode.jpg');
+  }
+
+  @media screen and (min-width: 768px) {
+    header nav {
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: 1090px) {
+    .hero {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+}

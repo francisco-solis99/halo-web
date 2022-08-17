@@ -10,6 +10,7 @@
   --dark-grey: #3a3a3a;
   --dark-light: #FFFFFF66;
   --light-white: #fffc;
+  --light-dark: rgba(0, 0, 0, 0.75);
 }
 
 body {
@@ -202,6 +203,7 @@ nav ul {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  background-color: var(--white);
 }
 
 .videos__info {
@@ -318,6 +320,10 @@ nav ul {
    Get the Game section
    ====
 */
+
+.game {
+  background-color: var(--white);
+}
 
 .game__title {
   text-align: center;

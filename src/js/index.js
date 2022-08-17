@@ -1,4 +1,5 @@
 import '../css/styles.css';
+import '../css/scheme.css';
 import '../css/desktop.css';
 import {Slider} from './Slider';
 
